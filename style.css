@@ -1,0 +1,105 @@
+* {
+  margin: 0px;
+  padding: 5px;
+}
+body {
+  background-size: 200% 200%;
+  animation: gradientFlow 3s linear infinite;
+  background: linear-gradient(300deg, #313131, #074a79 80%);
+}
+.back {
+  background-image: url("./Img/Spinner.png");
+  z-index: -10;
+  opacity: 0.1;
+}
+
+.maincontainer {
+  margin: 0px;
+  padding: 0px;
+  display: flex;
+  flex-direction: column;
+
+  gap: 20px;
+  justify-content: space-around;
+  align-items: center;
+}
+.currentdata {
+  margin: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  gap: 10px;
+}
+.players {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  gap: 150px;
+}
+.spinner {
+  width: 150px;
+}
+.rotate {
+  animation: rotation 2s infinite linear;
+}
+.selectedImg {
+  width: 150px;
+}
+.winnerimg {
+  width: 150px;
+}
+.computer_player {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 350px;
+  gap: 20px;
+}
+.user_player {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 350px;
+  gap: 20px;
+}
+.user_input {
+  display: flex;
+  gap: 2px;
+}
+.inputImg {
+  width: 100px;
+  border-radius: 50%;
+}
+.result {
+  color: white;
+  font-family: "Courier New", Courier, monospace;
+  font-size: 30px;
+}
+.score {
+  color: white;
+  font-size: 25px;
+}
+
+@keyframes gradientFlow {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+@keyframes rotation {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(359deg);
+  }
+}

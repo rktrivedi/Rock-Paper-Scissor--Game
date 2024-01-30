@@ -1,0 +1,46 @@
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Rock-Paper-Scissor</title>
+    <link rel="stylesheet" href="style.css">
+  <body>
+    <div class="back"></div>
+
+    <div class="maincontainer">
+        <div class="currentdata">
+            <img id="win_img" class="winnerimg" src="./Img/2.png" alt="result">
+            <h2 id="win_txt" class="result">Winner Is </h2>
+        </div>
+        <div class="players">
+            <div class="computer_player">
+                <img id="comp_img" class="selectedImg" src="./Img/1.png" alt="computer">
+                <h2 id="comp_text" class="result">Computer Selected</h2>
+                <h3 class="score">Score: - </h3>
+                <img class="spinner rotate" src="./Img/Spinner.png" alt="rotating">
+            </div>
+            <div class="user_player">
+                <img id="user_img" class="selectedImg" src="./Img/2.png" alt="computer">
+                <h2 id="user_text" class="result">You Selected</h2>
+                <h3 class="score">Score: - </h3>
+                <div class="user_input">
+                
+                <img onclick="userClickedPaper(this.id)" id="paper" class="inputImg" src="./Img/user_paper.png" alt="user_input">
+                <img onclick="userClickedRock(this.id)" id="rock" class="inputImg" src="./Img/user_rock.png" alt="">
+                <img onclick="userClickedScissor(this.id)" id="scissor" class="inputImg" src="./Img/user_scissor.png" alt="">
+                
+                
+                </div>
+                
+            </div>
+        </div>
+    </div>
+  </body>
+  <script src="script.js"></script>
+</html>
+
+
