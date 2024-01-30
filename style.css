@@ -3,9 +3,9 @@
   padding: 5px;
 }
 body {
+  background: linear-gradient(300deg, #313131, #074a79 80%);
   background-size: 200% 200%;
   animation: gradientFlow 3s linear infinite;
-  background: linear-gradient(300deg, #313131, #074a79 80%);
 }
 .back {
   background-image: url("./Img/Spinner.png");
